@@ -1,0 +1,24 @@
+# run command - run a command in console
+run = ""
+
+# entrypoint - main file opened in editor
+entrypoint = "replit.nix"
+
+# language - set the language
+language = "python3"
+
+# packager setup
+[packager]
+
+# ignoredPaths - file extension(s) or path(s) that don't want to interfer with the shell and console
+ignoredPaths=[".git"]
+
+# languages.python3 - specfic language config
+[languages.python3]
+
+# file extenstion of language
+pattern = "../*.py"
+
+[languages.c]
+
+pattern = "../*.c"
