@@ -1,10 +1,10 @@
 $(CC) = gcc
-$(PC) = python3
+$(PYC) = python3
 
 final:
 	$(CC) main.c -o main
 	./main
-	$(PC) main.py
+	$(PYC) main.py
 
 bash:
 	bash main.bash
@@ -12,8 +12,11 @@ bash:
 clean:
 	rm *.o main
 
-cleanall:
+rm:
 	@echo "Cleaning up..."
 	rm *.c
 	rm *.py
+	rm *.cs
+	rm *.cpp
+	rm *.js
 	rm *.o
